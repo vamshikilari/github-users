@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  color: white;
 }
 
 .App-logo {
@@ -14,14 +17,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem;
 }
 
 .App-link {
@@ -33,6 +34,108 @@
     transform: rotate(0deg);
   }
   to {
+    transform: rotate(360deg);
+  }
+}
+
+/* app specific  */
+.centered {
+  left: 30%;
+  top: 40%;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.col {
+  flex-direction: column;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 18px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.input-label {
+  margin: 0rem 0.2rem;
+  padding: 0.2rem;
+}
+
+.users-list {
+  padding: 0rem 1rem;
+  margin: 1rem 0rem;
+  width: 25rem;
+  z-index: 10;
+}
+
+ul.list-main {
+  list-style-type: none;
+  overflow: scroll;
+  max-height: 14rem;
+}
+li.list-item {
+  padding: 0.5rem;
+  background: teal;
+  margin: 0.1rem;
+  border-radius: 0.2rem;
+}
+.avatar-img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+.item-wrapper {
+  display: flex;
+  list-style: unset;
+  align-items: center;
+}
+
+/* loader */
+.loader {
+  border: 0.3rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 0.3rem solid #3498db;
+  width: 1.2rem;
+  height: 1.2rem;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
