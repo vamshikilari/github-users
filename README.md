@@ -1,3 +1,10 @@
+# App Specific
+
+The latest version for this application can be found here: 
+
+we have used debounce method from lodash, cached prev results for enhanced performace
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
