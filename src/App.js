@@ -29,6 +29,7 @@ function App() {
     }
   }, [inputValue]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const debouncedFn = useCallback(
     debounce(function (value) {
       callAPI(value);
